@@ -6,7 +6,7 @@ public:
             return false;
 
         int y = x;
-        int digit = 0;
+        long long digit = 0;
 
         while (y > 0) {
             int temp = y % 10;
@@ -14,6 +14,6 @@ public:
             y /= 10;
         }
 
-        return x == digit;
+        return digit == x;
     }
 };
